@@ -1,0 +1,7 @@
+pdf-engine: xelatex
+template: ghost.tex
+variables:
+  fontsize: 11pt
+  mainfont: "JetBrains Mono"
+  monofont: "JetBrains Mono"
+  geometry: "margin=0.9in"

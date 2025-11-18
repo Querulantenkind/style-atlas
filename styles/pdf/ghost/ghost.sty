@@ -1,0 +1,38 @@
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{transparent}
+
+% Colors
+\definecolor{ghost-bg}{RGB}{12,14,17}
+\definecolor{ghost-fg}{RGB}{220,220,220}
+\definecolor{ghost-fade}{RGB}{130,130,130}
+
+% Page
+\pagecolor{ghost-bg}
+\color{ghost-fg}
+
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\texttt{GHOST ARCHIVE // UNVERIFIED}}
+\rhead{\texttt{\thepage}}
+
+% Section headers
+\titleformat{\section}
+  {\Large\bfseries\color{ghost-fg}\addfontfeature{LetterSpace=4}}
+  {}
+  {0pt}
+  {}
+
+\titleformat{\subsection}
+  {\bfseries\color{ghost-fade}}
+  {}
+  {0pt}
+  {}
+
+% Ghost / Corrupt text commands
+\newcommand{\ghosttext}[1]{\transparent{0.45}{#1}}
+\newcommand{\corrupt}[1]{\textcolor{ghost-fade}{#1}}

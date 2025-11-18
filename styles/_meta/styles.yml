@@ -27,3 +27,18 @@ redacted:
     - classified
     - censorship
     - document
+
+ghost:
+  id: "ghost"
+  label: "Ghost Archive"
+  description: "Corrupted, leaked archive aesthetic."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - dark
+    - glitch
+    - archive
+    - degraded
