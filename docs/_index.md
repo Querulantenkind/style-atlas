@@ -21,6 +21,25 @@ the active stylesheet.
 <button onclick="applyStyle('blackops')">BlackOps</button>
 <button onclick="applyStyle('redacted')">Redacted</button>
 <button onclick="applyStyle('ghost')">Ghost</button>
+<button onclick="applyStyle('cyberpunk')">Cyberpunk</button>
+<button onclick="applyStyle('noir')">Noir</button>
+<button onclick="applyStyle('vapor')">Vapor</button>
+
+---
+
+## Available Styles
+
+### Dark Themes
+- **BlackOps** — Industrial, terminal-grade dark aesthetic
+- **Redacted** — Classified, blackout dossier aesthetic
+- **Ghost** — Corrupted, leaked archive aesthetic
+
+### Vibrant Themes
+- **Cyberpunk** — Neon-infused, retro-futuristic aesthetic
+- **Vapor** — Retro 80s/90s vaporwave aesthetic with pastel gradients
+
+### Classic Themes
+- **Noir** — Classic film noir aesthetic with high contrast
 
 ---
 
@@ -34,7 +53,7 @@ Each style is defined consistently across:
 - CSS (`styles/css/`)
 - PDF (`styles/pdf/`)
 
-See:
+See dedicated previews:
 
 - [BlackOps Preview](preview/blackops.md)  
 - [Redacted Preview](preview/redacted.md)  

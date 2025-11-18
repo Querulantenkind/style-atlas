@@ -1,6 +1,19 @@
 # style-atlas
-This repository is a growing collection of reusable styles   for text-based projects (Markdown, HTML/CSS, PDF).
 
+This repository is a growing collection of reusable styles for text-based projects (Markdown, HTML/CSS, PDF).
+
+## Available Styles
+
+- **BlackOps** — Industrial, terminal-grade dark aesthetic
+- **Redacted** — Classified, blackout dossier aesthetic
+- **Ghost** — Corrupted, leaked archive aesthetic
+- **Cyberpunk** — Neon-infused, retro-futuristic aesthetic with vibrant colors
+- **Noir** — Classic film noir aesthetic with high contrast and dramatic shadows
+- **Vapor** — Retro 80s/90s vaporwave aesthetic with pastel gradients and nostalgia
+
+## Repository Structure
+
+```
 style-atlas/
 │
 ├─ README.md
@@ -12,32 +25,53 @@ style-atlas/
 │   │   ├─ _index.md
 │   │   ├─ blackops.md
 │   │   ├─ redacted.md
-│   │   └─ ghost.md
+│   │   ├─ ghost.md
+│   │   ├─ cyberpunk.md
+│   │   ├─ noir.md
+│   │   └─ vapor.md
 │   │
 │   ├─ css/
 │   │   ├─ blackops.css
 │   │   ├─ redacted.css
-│   │   └─ ghost.css
+│   │   ├─ ghost.css
+│   │   ├─ cyberpunk.css
+│   │   ├─ noir.css
+│   │   └─ vapor.css
 │   │
 │   ├─ pdf/
 │   │   ├─ blackops/
 │   │   ├─ redacted/
-│   │   └─ ghost/
+│   │   ├─ ghost/
+│   │   ├─ cyberpunk/
+│   │   ├─ noir/
+│   │   └─ vapor/
 │   │
-│   └─ meta/
+│   └─ _meta/
 │       ├─ styles.yml
-│       └─ CONVENTIONS.md
+│       ├─ CONVENTIONS.md
+│       └─ tags.md
 │
 └─ docs/                     # GitHub Pages Root
-    ├─ index.md              # Startseite mit Style-Switcher
+    ├─ _index.md             # Homepage with Style Switcher
     ├─ styles/
-    │   ├─ base.css          # neutrales Default-Theme
-    │   ├─ switcher.js       # kleines JS zum Umschalten
-    │   ├─ blackops.css      # Kopie/Variante des blackops-Styles
-    │   ├─ redacted.css      # Kopie/Variante des redacted-Styles
-    │   └─ ghost.css         # Kopie/Variante des ghost-Styles
+    │   ├─ base.css          # Neutral default theme
+    │   ├─ switcher.js       # Style switching script
+    │   ├─ blackops.css
+    │   ├─ redacted.css
+    │   └─ ghost.css
     │
     └─ preview/
-        ├─ blackops.md       # Beispielseite nur mit blackops
-        ├─ redacted.md       # Beispielseite nur mit redacted
-        └─ ghost.md          # Beispielseite nur mit ghost
+        ├─ blackops.md
+        ├─ redacted.md
+        └─ ghost.md
+```
+
+## Usage
+
+Each style is defined consistently across three mediums:
+
+1. **Markdown** (`styles/markdown/`) — Documentation with embedded CSS
+2. **CSS** (`styles/css/`) — Standalone stylesheets
+3. **PDF** (`styles/pdf/`) — Pandoc templates and LaTeX packages
+
+See `styles/_meta/CONVENTIONS.md` for guidelines on adding new styles.
