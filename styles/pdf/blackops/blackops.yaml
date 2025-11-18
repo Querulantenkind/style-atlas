@@ -1,1 +1,7 @@
-# pandoc-defaults-file: blackops
+pdf-engine: xelatex
+template: blackops.tex
+variables:
+  fontsize: 11pt
+  mainfont: "IBM Plex Mono"
+  monofont: "IBM Plex Mono"
+  geometry: "margin=1in"

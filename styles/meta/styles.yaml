@@ -1,13 +1,13 @@
-blackops:
-  label: "BlackOps"
-  description: "Industrial, terminal-grade aesthetic"
-  mediums: ["markdown", "css", "pdf"]
-  status: "stable"
-  tags: ["dark", "mono", "industrial"]
-
-redacted:
-  label: "Redacted"
-  description: "Classified, blackout document style"
-  mediums: ["markdown", "css", "pdf"]
-  status: "beta"
-  tags: ["dark", "government", "censored"]
+<id>:
+  id: "<id>"
+  label: "Readable Name"
+  description: "Short one-line summary of the aesthetic."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"   # or: experimental, beta
+  tags:
+    - dark
+    - experimental
+    - technical

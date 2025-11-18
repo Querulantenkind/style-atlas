@@ -1,1 +1,33 @@
-blackops default initial look including color scheme and fonts and header/footer styles
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+
+% Colors
+\definecolor{ops-gray}{RGB}{210,210,210}
+\definecolor{ops-dark}{RGB}{15,15,17}
+
+% Page
+\pagecolor{ops-dark}
+\color{ops-gray}
+
+% Header / Footer
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\texttt{CE-01 // BLACK OPS}}
+\rhead{\texttt{\thepage}}
+
+% Section headers
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0pt}
+  {\MakeUppercase}
+
+\titleformat{\subsection}
+  {\bfseries}
+  {}
+  {0pt}
+  {}
