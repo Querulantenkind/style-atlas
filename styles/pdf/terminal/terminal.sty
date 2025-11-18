@@ -1,0 +1,74 @@
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+
+% Colors - Terminal green palette
+\definecolor{terminal-green}{RGB}{0,255,0}
+\definecolor{terminal-dark-green}{RGB}{0,221,0}
+\definecolor{terminal-dim-green}{RGB}{0,204,0}
+\definecolor{terminal-bg}{RGB}{0,0,0}
+\definecolor{terminal-code-bg}{RGB}{0,17,0}
+
+% Page
+\pagecolor{terminal-bg}
+\color{terminal-green}
+
+% Header / Footer - terminal style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{terminal-green}{\texttt{\$ system-doc}}}
+\rhead{\textcolor{terminal-green}{\texttt{[\thepage]}}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{terminal-green}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section headers with terminal styling
+\titleformat{\section}
+  {\large\bfseries\color{terminal-green}\ttfamily}
+  {\#}
+  {0.5em}
+  {\MakeUppercase}
+  [\color{terminal-green}\titlerule]
+
+\titleformat{\subsection}
+  {\bfseries\color{terminal-green}\ttfamily}
+  {\#\#}
+  {0.5em}
+  {}
+
+\titleformat{\subsubsection}
+  {\bfseries\color{terminal-dark-green}\ttfamily}
+  {\#\#\#}
+  {0.5em}
+  {}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=terminal-dark-green,
+  urlcolor=terminal-dark-green,
+  citecolor=terminal-green
+}
+
+% Code blocks
+\tcbuselibrary{listings}
+\newtcolorbox{codeblock}{
+  colback=terminal-code-bg,
+  colframe=terminal-green,
+  arc=1pt,
+  boxrule=1pt,
+  left=5pt,
+  right=5pt,
+  top=5pt,
+  bottom=5pt
+}
+
+% Monospace font for entire document
+\setmainfont{Courier New}[
+  Color=terminal-green,
+  LetterSpace=3.0
+]

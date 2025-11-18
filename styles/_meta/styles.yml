@@ -87,3 +87,18 @@ vapor:
     - pastel
     - gradient
     - nostalgic
+
+terminal:
+  id: "terminal"
+  label: "Terminal"
+  description: "Classic command-line aesthetic with green-on-black monospace styling."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - dark
+    - monospaced
+    - classic
+    - command-line
