@@ -1,0 +1,29 @@
+blackops:
+  id: "blackops"
+  label: "BlackOps"
+  description: "Industrial, terminal-grade dark aesthetic."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - dark
+    - industrial
+    - monospaced
+    - technical
+
+redacted:
+  id: "redacted"
+  label: "Redacted"
+  description: "Classified, blackout dossier aesthetic."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - dark
+    - classified
+    - censorship
+    - document

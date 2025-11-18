@@ -1,0 +1,7 @@
+pdf-engine: xelatex
+template: redacted.tex
+variables:
+  fontsize: 11pt
+  mainfont: "Roboto Mono"
+  monofont: "Roboto Mono"
+  geometry: "margin=1in"

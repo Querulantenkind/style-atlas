@@ -1,0 +1,36 @@
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+
+% Colors
+\definecolor{ink}{RGB}{230,230,230}
+\definecolor{blk}{RGB}{0,0,0}
+\definecolor{subt}{RGB}{150,150,150}
+
+% Page
+\pagecolor{blk}
+\color{ink}
+
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\texttt{CLASSIFIED // CE-██}}
+\rhead{\texttt{\thepage}}
+
+% Section styling
+\titleformat{\section}
+  {\Large\bfseries\color{ink}\uppercase}
+  {}
+  {0pt}
+  {}
+
+\titleformat{\subsection}
+  {\bfseries\color{subt}}
+  {}
+  {0pt}
+  {}
+
+% Redaction command
+\newcommand{\redact}[1]{\colorbox{blk}{\phantom{#1}}}
