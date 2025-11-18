@@ -75,3 +75,30 @@ Each style is defined consistently across three mediums:
 3. **PDF** (`styles/pdf/`) — Pandoc templates and LaTeX packages
 
 See `styles/_meta/CONVENTIONS.md` for guidelines on adding new styles.
+style-atlas/
+│
+└─ styles/
+    ├─ themes/               # NEU: pro Style eine Theme-Definition
+    │   ├─ blackops.yml
+    │   ├─ redacted.yml
+    │   └─ ghost.yml
+    │
+    ├─ markdown/
+    │   ├─ _index.md
+    │   ├─ blackops.md
+    │   ├─ redacted.md
+    │   └─ ghost.md
+    │
+    ├─ css/
+    │   ├─ blackops.css
+    │   ├─ redacted.css
+    │   └─ ghost.css
+    │
+    ├─ pdf/
+    │   ├─ blackops/
+    │   ├─ redacted/
+    │   └─ ghost/
+    │
+    └─ meta/
+        ├─ styles.yml
+        └─ CONVENTIONS.md
