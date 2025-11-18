@@ -1,0 +1,123 @@
+/* CYBERPUNK CSS THEME
+ * Neon-infused, retro-futuristic aesthetic with vibrant colors.
+ */
+
+body {
+  background: #0a0e27;
+  color: #e0e0e0;
+  font-family: "Fira Code", "Courier New", monospace;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  text-shadow: 0 0 2px rgba(0, 255, 255, 0.3);
+}
+
+h1, h2, h3 {
+  color: #00ffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.4);
+  border-bottom: 2px solid #ff00ff;
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.9), 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+pre, code {
+  background: #1a1a2e;
+  border: 1px solid #ff00ff;
+  border-radius: 3px;
+  padding: 0.25rem 0.4rem;
+  color: #00ff00;
+  font-size: 0.95rem;
+  box-shadow: 0 0 5px rgba(255, 0, 255, 0.3);
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ff00ff;
+  box-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
+  margin: 2.5rem 0;
+}
+
+a {
+  color: #ff00ff;
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(255, 0, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: 3px solid #ff00ff;
+  padding-left: 1rem;
+  color: #b0b0b0;
+  margin-left: 0;
+  background: rgba(255, 0, 255, 0.05);
+  border-radius: 2px;
+}
+
+strong {
+  color: #ff00ff;
+  font-weight: bold;
+}
+
+em {
+  color: #00ffff;
+  font-style: italic;
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  border: 1px solid #ff00ff;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: rgba(255, 0, 255, 0.2);
+  color: #00ffff;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+}
+
+tr:hover {
+  background: rgba(0, 255, 255, 0.05);
+}

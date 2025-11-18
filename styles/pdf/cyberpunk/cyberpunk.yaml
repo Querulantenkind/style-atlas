@@ -1,0 +1,7 @@
+pdf-engine: xelatex
+template: cyberpunk.tex
+variables:
+  fontsize: 11pt
+  mainfont: "Fira Code"
+  monofont: "Fira Code"
+  geometry: "margin=1in"

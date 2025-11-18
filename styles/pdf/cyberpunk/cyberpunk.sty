@@ -1,0 +1,69 @@
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+
+% Colors - Cyberpunk neon palette
+\definecolor{cyber-cyan}{RGB}{0,255,255}
+\definecolor{cyber-magenta}{RGB}{255,0,255}
+\definecolor{cyber-dark}{RGB}{10,14,39}
+\definecolor{cyber-bg}{RGB}{26,26,46}
+\definecolor{cyber-text}{RGB}{224,224,224}
+\definecolor{cyber-green}{RGB}{0,255,0}
+
+% Page
+\pagecolor{cyber-dark}
+\color{cyber-text}
+
+% Header / Footer - neon style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{cyber-cyan}{\texttt{CYBR-NET // UPLINK}}}
+\rhead{\textcolor{cyber-magenta}{\texttt{\thepage}}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{cyber-magenta}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section headers with cyberpunk styling
+\titleformat{\section}
+  {\large\bfseries\color{cyber-cyan}}
+  {}
+  {0pt}
+  {\MakeUppercase}
+  [\color{cyber-magenta}\titlerule]
+
+\titleformat{\subsection}
+  {\bfseries\color{cyber-cyan}}
+  {}
+  {0pt}
+  {}
+
+\titleformat{\subsubsection}
+  {\bfseries\color{cyber-magenta}}
+  {}
+  {0pt}
+  {}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=cyber-magenta,
+  urlcolor=cyber-cyan,
+  citecolor=cyber-green
+}
+
+% Code blocks
+\tcbuselibrary{listings}
+\newtcolorbox{codeblock}{
+  colback=cyber-bg,
+  colframe=cyber-magenta,
+  arc=2pt,
+  boxrule=1pt,
+  left=5pt,
+  right=5pt,
+  top=5pt,
+  bottom=5pt
+}

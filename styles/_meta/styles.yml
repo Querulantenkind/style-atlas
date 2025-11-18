@@ -42,3 +42,18 @@ ghost:
     - glitch
     - archive
     - degraded
+
+cyberpunk:
+  id: "cyberpunk"
+  label: "Cyberpunk"
+  description: "Neon-infused, retro-futuristic aesthetic with vibrant colors."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - neon
+    - futuristic
+    - vibrant
+    - high-tech
