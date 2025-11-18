@@ -1,0 +1,7 @@
+pdf-engine: xelatex
+template: noir.tex
+variables:
+  fontsize: 12pt
+  mainfont: "Crimson Text"
+  monofont: "Courier Prime"
+  geometry: "margin=1.2in"

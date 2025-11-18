@@ -1,0 +1,77 @@
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{tikz}
+
+% Colors - vaporwave pastel palette
+\definecolor{vapor-pink}{RGB}{255,153,255}
+\definecolor{vapor-cyan}{RGB}{102,255,255}
+\definecolor{vapor-purple}{RGB}{118,75,162}
+\definecolor{vapor-light}{RGB}{255,204,255}
+\definecolor{vapor-text}{RGB}{240,240,240}
+\definecolor{vapor-bg}{RGB}{102,126,234}
+
+% Page - gradient effect simulation
+\pagecolor{vapor-purple}
+\color{vapor-text}
+
+% Header / Footer - vaporwave style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{vapor-pink}{\texttt{Ａ Ｅ Ｓ Ｔ Ｈ Ｅ Ｔ Ｉ Ｃ}}}
+\rhead{\textcolor{vapor-cyan}{\texttt{\thepage}}}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{vapor-pink}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section headers with vaporwave styling
+\titleformat{\section}
+  {\Large\bfseries\color{vapor-light}}
+  {}
+  {0pt}
+  {\MakeUppercase}
+  [\color{vapor-pink}\titlerule[3pt]]
+
+\titleformat{\subsection}
+  {\large\bfseries\color{vapor-light}}
+  {}
+  {0pt}
+  {\MakeUppercase}
+
+\titleformat{\subsubsection}
+  {\bfseries\color{vapor-cyan}}
+  {}
+  {0pt}
+  {}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=vapor-cyan,
+  urlcolor=vapor-cyan,
+  citecolor=vapor-pink
+}
+
+% Emphasis
+\let\oldemph\emph
+\renewcommand{\emph}[1]{\textit{\color{vapor-cyan}#1}}
+
+% Strong
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{\textbf{\color{vapor-light}#1}}
+
+% Custom quote environment with vaporwave styling
+\usepackage{framed}
+\renewenvironment{quote}{%
+  \def\FrameCommand{%
+    {\color{vapor-pink}\vrule width 3pt}%
+    \hspace{10pt}%
+  }%
+  \MakeFramed{\advance\hsize-\width\FrameRestore}%
+  \color{vapor-light}\itshape
+}{%
+  \endMakeFramed
+}

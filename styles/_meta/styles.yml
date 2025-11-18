@@ -57,3 +57,33 @@ cyberpunk:
     - futuristic
     - vibrant
     - high-tech
+
+noir:
+  id: "noir"
+  label: "Noir"
+  description: "Classic film noir aesthetic with high contrast and dramatic shadows."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - monochrome
+    - vintage
+    - dramatic
+    - high-contrast
+
+vapor:
+  id: "vapor"
+  label: "Vaporwave"
+  description: "Retro 80s/90s vaporwave aesthetic with pastel gradients and nostalgia."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - retro
+    - pastel
+    - gradient
+    - nostalgic

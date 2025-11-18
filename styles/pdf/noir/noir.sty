@@ -1,0 +1,62 @@
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+
+% Colors - noir grayscale palette
+\definecolor{noir-white}{RGB}{255,255,255}
+\definecolor{noir-light}{RGB}{232,232,232}
+\definecolor{noir-gray}{RGB}{102,102,102}
+\definecolor{noir-dark}{RGB}{26,26,26}
+\definecolor{noir-black}{RGB}{13,13,13}
+
+% Page
+\pagecolor{noir-dark}
+\color{noir-light}
+
+% Header / Footer - film noir style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{noir-white}{\textsc{Case File}}}
+\rhead{\textcolor{noir-gray}{\texttt{\thepage}}}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{noir-gray}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section headers with noir styling
+\titleformat{\section}
+  {\Large\bfseries\color{noir-white}}
+  {}
+  {0pt}
+  {\MakeUppercase}
+  [\color{noir-gray}\titlerule[2pt]]
+
+\titleformat{\subsection}
+  {\large\bfseries\color{noir-white}}
+  {}
+  {0pt}
+  {\MakeUppercase}
+
+\titleformat{\subsubsection}
+  {\bfseries\color{noir-light}}
+  {}
+  {0pt}
+  {}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=noir-gray,
+  urlcolor=noir-gray,
+  citecolor=noir-light
+}
+
+% Emphasis
+\let\oldemph\emph
+\renewcommand{\emph}[1]{\textit{\color{noir-white}#1}}
+
+% Strong
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{\textbf{\color{noir-white}#1}}

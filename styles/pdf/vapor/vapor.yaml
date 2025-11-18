@@ -1,0 +1,7 @@
+pdf-engine: xelatex
+template: vapor.tex
+variables:
+  fontsize: 11pt
+  mainfont: "VT323"
+  monofont: "VT323"
+  geometry: "margin=1in"

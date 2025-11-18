@@ -1,0 +1,137 @@
+/* NOIR CSS THEME
+ * Classic film noir aesthetic with high contrast and dramatic shadows.
+ */
+
+body {
+  background: #1a1a1a;
+  color: #e8e8e8;
+  font-family: "Crimson Text", Georgia, serif;
+  line-height: 1.7;
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 1.5rem 2.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 3px double #666666;
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+h1 {
+  font-size: 2.6rem;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.95);
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+pre, code {
+  background: #0d0d0d;
+  border: 1px solid #3a3a3a;
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  color: #d0d0d0;
+  font-family: "Courier Prime", "Courier New", monospace;
+  font-size: 0.95rem;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #4a4a4a;
+  margin: 2.5rem 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: #b8b8b8;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+blockquote {
+  border-left: 4px solid #666666;
+  padding-left: 1.5rem;
+  color: #c0c0c0;
+  font-style: italic;
+  margin-left: 0;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 2px;
+}
+
+strong {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+em {
+  color: #d8d8d8;
+  font-style: italic;
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li::marker {
+  color: #888888;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+th, td {
+  border: 1px solid #4a4a4a;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: #0d0d0d;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 3px double #666666;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}

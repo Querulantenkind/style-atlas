@@ -1,0 +1,155 @@
+/* VAPORWAVE CSS THEME
+ * Retro 80s/90s vaporwave aesthetic with pastel gradients and nostalgia.
+ */
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-attachment: fixed;
+  color: #f0f0f0;
+  font-family: "VT323", "Courier New", monospace;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-shadow: 0 0 8px rgba(255, 0, 255, 0.5);
+}
+
+h1, h2, h3 {
+  color: #ffccff;
+  font-family: "VT323", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 15px rgba(255, 102, 255, 0.8), 2px 2px 0px #ff00ff;
+  border-bottom: 3px solid #ff99ff;
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 20px rgba(255, 102, 255, 0.9), 3px 3px 0px #ff00ff;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+pre, code {
+  background: rgba(102, 51, 153, 0.4);
+  border: 2px solid #ff99ff;
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  color: #ccffcc;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(255, 153, 255, 0.3);
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(90deg, #ff99ff, #66ffff, #ff99ff);
+  margin: 2.5rem 0;
+  box-shadow: 0 0 10px rgba(255, 153, 255, 0.6);
+}
+
+a {
+  color: #66ffff;
+  text-decoration: none;
+  text-shadow: 0 0 8px rgba(102, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ff99ff;
+  text-shadow: 0 0 12px rgba(255, 153, 255, 0.9);
+  text-decoration: underline wavy;
+}
+
+blockquote {
+  border-left: 4px solid #ff99ff;
+  padding-left: 1.5rem;
+  color: #ffccff;
+  font-style: italic;
+  margin-left: 0;
+  background: rgba(255, 102, 255, 0.1);
+  border-radius: 4px;
+}
+
+strong {
+  color: #ffccff;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 204, 255, 0.8);
+}
+
+em {
+  color: #66ffff;
+  font-style: italic;
+  text-shadow: 0 0 8px rgba(102, 255, 255, 0.6);
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li::marker {
+  color: #ff99ff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  background: rgba(102, 51, 153, 0.2);
+  box-shadow: 0 0 20px rgba(255, 153, 255, 0.3);
+}
+
+th, td {
+  border: 2px solid #ff99ff;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: rgba(255, 102, 255, 0.3);
+  color: #ffccff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-shadow: 0 0 10px rgba(255, 204, 255, 0.8);
+}
+
+tr:hover {
+  background: rgba(255, 102, 255, 0.15);
+}
+
+/* Vaporwave aesthetic extras */
+::selection {
+  background: #ff99ff;
+  color: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(102, 51, 153, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff99ff, #66ffff);
+  border-radius: 6px;
+}
