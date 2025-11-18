@@ -1,0 +1,74 @@
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+
+% Colors - Blueprint palette
+\definecolor{blueprint-blue}{RGB}{12,46,78}
+\definecolor{blueprint-light}{RGB}{107,163,212}
+\definecolor{blueprint-white}{RGB}{255,255,255}
+\definecolor{blueprint-grid}{RGB}{40,60,80}
+
+% Page
+\pagecolor{blueprint-blue}
+\color{blueprint-white}
+
+% Header / Footer - technical style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{blueprint-white}{\texttt{TECHNICAL SPECIFICATION}}}
+\rhead{\textcolor{blueprint-light}{\texttt{PAGE \thepage}}}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{blueprint-white}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section headers with numbering
+\titleformat{\section}
+  {\large\bfseries\color{blueprint-white}\ttfamily}
+  {1.0}
+  {0.5em}
+  {\MakeUppercase}
+  [\color{blueprint-white}\titlerule]
+
+\titleformat{\subsection}
+  {\bfseries\color{blueprint-white}\ttfamily}
+  {2.0}
+  {0.5em}
+  {\MakeUppercase}
+
+\titleformat{\subsubsection}
+  {\bfseries\color{blueprint-light}\ttfamily}
+  {3.0}
+  {0.5em}
+  {}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blueprint-light,
+  urlcolor=blueprint-light,
+  citecolor=blueprint-white
+}
+
+% Code blocks
+\tcbuselibrary{listings}
+\newtcolorbox{codeblock}{
+  colback=black!40!blueprint-blue,
+  colframe=blueprint-light,
+  arc=1pt,
+  boxrule=1pt,
+  left=5pt,
+  right=5pt,
+  top=5pt,
+  bottom=5pt
+}
+
+% Monospace font for technical feel
+\setmainfont{Courier New}[
+  Color=blueprint-white,
+  LetterSpace=1.5
+]

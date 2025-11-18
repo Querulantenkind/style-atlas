@@ -1,0 +1,155 @@
+/* PARCHMENT CSS THEME
+ * Ancient manuscript aesthetic with aged paper and serif typography.
+ */
+
+body {
+  background: #f4e8d0;
+  color: #3d2817;
+  font-family: "Georgia", "Garamond", serif;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  border: 1px solid #c9a66b;
+  box-shadow: 0 0 20px rgba(61, 40, 23, 0.2), inset 0 0 100px rgba(139, 90, 43, 0.05);
+}
+
+h1, h2, h3 {
+  color: #5d3a1a;
+  font-family: "Georgia", "Garamond", serif;
+  font-weight: normal;
+  text-align: center;
+  border-bottom: 2px solid #8b5a2b;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  font-variant: small-caps;
+  font-size: 2.5rem;
+  text-transform: lowercase;
+}
+
+h2 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+pre, code {
+  background: #e8dcc0;
+  border: 1px solid #c9a66b;
+  border-radius: 2px;
+  padding: 0.2rem 0.4rem;
+  color: #5d3a1a;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    #8b5a2b 0,
+    #8b5a2b 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  margin: 2rem 0;
+}
+
+a {
+  color: #8b5a2b;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5d3a1a;
+}
+
+blockquote {
+  border-left: 4px solid #8b5a2b;
+  padding-left: 1.5rem;
+  color: #5d3a1a;
+  font-style: italic;
+  background: rgba(139, 90, 43, 0.05);
+  margin: 1rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+strong {
+  color: #5d3a1a;
+  font-weight: bold;
+}
+
+em {
+  color: #3d2817;
+  font-style: italic;
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
+li::marker {
+  color: #8b5a2b;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  background: #e8dcc0;
+}
+
+th, td {
+  border: 1px solid #c9a66b;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+th {
+  background: #d4c4a0;
+  color: #5d3a1a;
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}
+
+tr:nth-child(even) {
+  background: rgba(232, 220, 192, 0.5);
+}
+
+tr:hover {
+  background: #e8dcc0;
+}
+
+/* First letter styling for paragraphs after headers */
+h1 + p::first-letter,
+h2 + p::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #8b5a2b;
+  float: left;
+  line-height: 0.8;
+  margin: 0.1rem 0.1rem 0 0;
+}

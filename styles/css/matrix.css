@@ -1,0 +1,151 @@
+/* MATRIX CSS THEME
+ * Digital rain aesthetic with cascading characters and cyber atmosphere.
+ */
+
+body {
+  background: #0d0208;
+  color: #00ff41;
+  font-family: "Courier New", "Consolas", monospace;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+h1, h2, h3 {
+  color: #00ff41;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.8), 0 0 20px rgba(0, 255, 65, 0.4);
+  letter-spacing: 0.2em;
+  margin-top: 2.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h1::after, h2::after, h3::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #00ff41, transparent);
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.6);
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+pre, code {
+  background: #001a0d;
+  border: 1px solid #00ff41;
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  color: #00ff41;
+  font-size: 0.95rem;
+  box-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #00ff41, transparent);
+  box-shadow: 0 0 8px rgba(0, 255, 65, 0.5);
+  margin: 2rem 0;
+}
+
+a {
+  color: #39ff14;
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(57, 255, 20, 0.6);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #00ff41;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.9);
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: 3px solid #00ff41;
+  padding-left: 1rem;
+  color: #00cc33;
+  margin-left: 0;
+  background: rgba(0, 255, 65, 0.05);
+  border-radius: 3px;
+  box-shadow: inset 0 0 10px rgba(0, 255, 65, 0.1);
+}
+
+strong {
+  color: #39ff14;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.7);
+}
+
+em {
+  color: #00ff41;
+  font-style: italic;
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li::marker {
+  color: #39ff14;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+}
+
+th, td {
+  border: 1px solid #00ff41;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: rgba(0, 255, 65, 0.1);
+  color: #00ff41;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 255, 65, 0.6);
+}
+
+tr:hover {
+  background: rgba(0, 255, 65, 0.05);
+}
+
+/* Digital rain animation effect */
+@keyframes rain {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}

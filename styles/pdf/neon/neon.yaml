@@ -1,0 +1,7 @@
+pdf-engine: xelatex
+template: neon.tex
+variables:
+  fontsize: 11pt
+  mainfont: "Arial"
+  monofont: "Courier New"
+  geometry: "margin=1in"

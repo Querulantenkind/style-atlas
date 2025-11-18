@@ -1,0 +1,7 @@
+pdf-engine: xelatex
+template: blueprint.tex
+variables:
+  fontsize: 11pt
+  mainfont: "Courier New"
+  monofont: "Courier New"
+  geometry: "margin=1in"

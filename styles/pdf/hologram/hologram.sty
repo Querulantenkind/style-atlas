@@ -1,0 +1,75 @@
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+
+% Colors - Hologram blue palette
+\definecolor{holo-cyan}{RGB}{0,217,255}
+\definecolor{holo-bright}{RGB}{0,240,255}
+\definecolor{holo-dim}{RGB}{0,184,212}
+\definecolor{holo-bg}{RGB}{0,10,26}
+\definecolor{holo-code-bg}{RGB}{0,25,40}
+
+% Page
+\pagecolor{holo-bg}
+\color{holo-cyan}
+
+% Header / Footer - hologram style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{holo-bright}{\texttt{◊ HOLOGRAPHIC INTERFACE ◊}}}
+\rhead{\textcolor{holo-cyan}{\texttt{[\thepage]}}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{holo-cyan}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section headers with holographic effect
+\titleformat{\section}
+  {\large\color{holo-bright}\sffamily}
+  {}
+  {0pt}
+  {\MakeUppercase}
+  [\color{holo-cyan}\titlerule]
+
+\titleformat{\subsection}
+  {\color{holo-bright}\sffamily}
+  {}
+  {0pt}
+  {\MakeUppercase}
+
+\titleformat{\subsubsection}
+  {\color{holo-cyan}\sffamily}
+  {}
+  {0pt}
+  {}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=holo-bright,
+  urlcolor=holo-bright,
+  citecolor=holo-cyan
+}
+
+% Code blocks
+\tcbuselibrary{listings}
+\newtcolorbox{codeblock}{
+  colback=holo-code-bg,
+  colframe=holo-cyan,
+  arc=3pt,
+  boxrule=1pt,
+  left=5pt,
+  right=5pt,
+  top=5pt,
+  bottom=5pt,
+  boxshadow={0pt 0pt 5pt holo-cyan}
+}
+
+% Sans-serif font for holographic feel
+\setmainfont{Segoe UI}[
+  Color=holo-cyan,
+  LetterSpace=2.0
+]

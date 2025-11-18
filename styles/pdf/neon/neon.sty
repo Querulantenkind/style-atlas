@@ -1,0 +1,73 @@
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+
+% Colors - Neon palette
+\definecolor{neon-pink}{RGB}{255,0,128}
+\definecolor{neon-cyan}{RGB}{0,255,255}
+\definecolor{neon-yellow}{RGB}{255,255,0}
+\definecolor{neon-green}{RGB}{0,255,0}
+\definecolor{neon-magenta}{RGB}{255,0,255}
+\definecolor{neon-bg}{RGB}{10,10,10}
+
+% Page
+\pagecolor{neon-bg}
+\color{white}
+
+% Header / Footer - neon style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{neon-pink}{\textbf{◈ NEON ◈}}}
+\rhead{\textcolor{neon-cyan}{\textbf{\thepage}}}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{neon-magenta}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section headers with neon boxes
+\titleformat{\section}
+  {\Large\bfseries\color{neon-pink}\sffamily}
+  {}
+  {0pt}
+  {\MakeUppercase}
+
+\titleformat{\subsection}
+  {\large\bfseries\color{neon-cyan}\sffamily}
+  {}
+  {0pt}
+  {\MakeUppercase}
+
+\titleformat{\subsubsection}
+  {\bfseries\color{neon-yellow}\sffamily}
+  {}
+  {0pt}
+  {\MakeUppercase}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=neon-green,
+  urlcolor=neon-green,
+  citecolor=neon-cyan
+}
+
+% Code blocks
+\tcbuselibrary{listings}
+\newtcolorbox{codeblock}{
+  colback=black,
+  colframe=neon-magenta,
+  arc=3pt,
+  boxrule=1pt,
+  left=5pt,
+  right=5pt,
+  top=5pt,
+  bottom=5pt
+}
+
+% Sans-serif font for modern feel
+\setmainfont{Arial}[
+  Color=white
+]

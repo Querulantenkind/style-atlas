@@ -1,0 +1,7 @@
+pdf-engine: xelatex
+template: hologram.tex
+variables:
+  fontsize: 11pt
+  mainfont: "Segoe UI"
+  monofont: "Consolas"
+  geometry: "margin=1in"

@@ -1,0 +1,7 @@
+pdf-engine: xelatex
+template: parchment.tex
+variables:
+  fontsize: 12pt
+  mainfont: "Georgia"
+  monofont: "Courier New"
+  geometry: "margin=1.2in"

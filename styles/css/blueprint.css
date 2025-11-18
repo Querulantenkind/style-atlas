@@ -1,0 +1,184 @@
+/* BLUEPRINT CSS THEME
+ * Technical blueprint aesthetic with grid lines and engineering style.
+ */
+
+body {
+  background: #0c2e4e;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: #ffffff;
+  font-family: "Courier New", "Consolas", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: 2px solid #ffffff;
+  padding: 0.5rem 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h1::before {
+  content: "1.0 ";
+  color: #6ba3d4;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h2::before {
+  content: "2.0 ";
+  color: #6ba3d4;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+h3::before {
+  content: "3.0 ";
+  color: #6ba3d4;
+}
+
+pre, code {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #6ba3d4;
+  border-radius: 2px;
+  padding: 0.25rem 0.5rem;
+  color: #6ba3d4;
+  font-size: 0.95rem;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    #ffffff 0,
+    #ffffff 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  margin: 2rem 0;
+}
+
+a {
+  color: #6ba3d4;
+  text-decoration: none;
+  border-bottom: 1px dashed #6ba3d4;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+blockquote {
+  border-left: 3px solid #6ba3d4;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #d0d0d0;
+  margin-left: 0;
+  background: rgba(107, 163, 212, 0.1);
+  border-radius: 2px;
+  position: relative;
+}
+
+blockquote::before {
+  content: "NOTE: ";
+  font-weight: bold;
+  color: #6ba3d4;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+strong {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+em {
+  color: #6ba3d4;
+  font-style: italic;
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li::marker {
+  color: #6ba3d4;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+  border: 1px solid #ffffff;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: rgba(107, 163, 212, 0.3);
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+tr:nth-child(even) {
+  background: rgba(107, 163, 212, 0.05);
+}
+
+tr:hover {
+  background: rgba(107, 163, 212, 0.15);
+}
+
+/* Technical corner markers */
+h1::after, h2::after, h3::after {
+  content: "";
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border: 2px solid #6ba3d4;
+  border-left: none;
+  border-bottom: none;
+}

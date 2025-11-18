@@ -1,0 +1,74 @@
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+
+% Colors - Synthwave palette
+\definecolor{synth-purple}{RGB}{43,16,85}
+\definecolor{synth-pink}{RGB}{255,108,171}
+\definecolor{synth-cyan}{RGB}{0,217,255}
+\definecolor{synth-yellow}{RGB}{255,235,59}
+\definecolor{synth-blue}{RGB}{117,151,222}
+
+% Page - gradient background effect
+\pagecolor{synth-purple}
+\color{white}
+
+% Header / Footer - retrowave style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{synth-pink}{\textbf{★ SYNTHWAVE ★}}}
+\rhead{\textcolor{synth-cyan}{\textbf{\thepage}}}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{synth-yellow}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section headers with neon effect
+\titleformat{\section}
+  {\Large\bfseries\color{synth-pink}\sffamily}
+  {}
+  {0pt}
+  {\MakeUppercase}
+  [\color{synth-yellow}\titlerule[3pt]]
+
+\titleformat{\subsection}
+  {\large\bfseries\color{synth-cyan}\sffamily}
+  {}
+  {0pt}
+  {\MakeUppercase}
+  [\color{synth-yellow}\titlerule[2pt]]
+
+\titleformat{\subsubsection}
+  {\bfseries\color{synth-yellow}\sffamily}
+  {}
+  {0pt}
+  {\MakeUppercase}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=synth-yellow,
+  urlcolor=synth-yellow,
+  citecolor=synth-cyan
+}
+
+% Code blocks
+\tcbuselibrary{listings}
+\newtcolorbox{codeblock}{
+  colback=synth-purple!60,
+  colframe=synth-pink,
+  arc=3pt,
+  boxrule=1pt,
+  left=5pt,
+  right=5pt,
+  top=5pt,
+  bottom=5pt
+}
+
+% Sans-serif font for retro feel
+\setmainfont{Arial}[
+  Color=white
+]

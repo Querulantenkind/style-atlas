@@ -102,3 +102,93 @@ terminal:
     - monospaced
     - classic
     - command-line
+
+matrix:
+  id: "matrix"
+  label: "Matrix"
+  description: "Digital rain aesthetic with cascading characters and cyber atmosphere."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - dark
+    - cyberpunk
+    - animated
+    - green
+
+hologram:
+  id: "hologram"
+  label: "Hologram"
+  description: "Futuristic holographic projection with blue glows and scan lines."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - futuristic
+    - blue
+    - sci-fi
+    - glowing
+
+parchment:
+  id: "parchment"
+  label: "Parchment"
+  description: "Ancient manuscript aesthetic with aged paper and serif typography."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - vintage
+    - serif
+    - warm
+    - historical
+
+neon:
+  id: "neon"
+  label: "Neon"
+  description: "Vibrant neon sign aesthetic with electric glowing borders."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - vibrant
+    - glowing
+    - colorful
+    - urban
+
+blueprint:
+  id: "blueprint"
+  label: "Blueprint"
+  description: "Technical blueprint aesthetic with grid lines and engineering style."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - technical
+    - blue
+    - grid
+    - engineering
+
+synthwave:
+  id: "synthwave"
+  label: "Synthwave"
+  description: "80s retrowave with sunset gradients and neon grid aesthetic."
+  mediums:
+    - markdown
+    - css
+    - pdf
+  status: "stable"
+  tags:
+    - retro
+    - gradient
+    - neon
+    - 80s

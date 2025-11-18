@@ -1,0 +1,73 @@
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+
+% Colors - Parchment palette
+\definecolor{parchment-bg}{RGB}{244,232,208}
+\definecolor{parchment-text}{RGB}{61,40,23}
+\definecolor{parchment-dark}{RGB}{93,58,26}
+\definecolor{parchment-accent}{RGB}{139,90,43}
+\definecolor{parchment-border}{RGB}{201,166,107}
+
+% Page
+\pagecolor{parchment-bg}
+\color{parchment-text}
+
+% Header / Footer - manuscript style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{parchment-accent}{\textit{Manuscript}}}
+\rhead{\textcolor{parchment-accent}{\textit{\thepage}}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{parchment-accent}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section headers - centered, serif
+\titleformat{\section}
+  {\Large\color{parchment-dark}\centering}
+  {}
+  {0pt}
+  {}
+  [\color{parchment-accent}\titlerule]
+
+\titleformat{\subsection}
+  {\large\color{parchment-dark}\centering\itshape}
+  {}
+  {0pt}
+  {}
+
+\titleformat{\subsubsection}
+  {\color{parchment-dark}}
+  {}
+  {0pt}
+  {}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=parchment-accent,
+  urlcolor=parchment-accent,
+  citecolor=parchment-dark
+}
+
+% Code blocks
+\tcbuselibrary{listings}
+\newtcolorbox{codeblock}{
+  colback=parchment-border!30,
+  colframe=parchment-accent,
+  arc=1pt,
+  boxrule=1pt,
+  left=5pt,
+  right=5pt,
+  top=5pt,
+  bottom=5pt
+}
+
+% Serif font for manuscript feel
+\setmainfont{Georgia}[
+  Color=parchment-text
+]

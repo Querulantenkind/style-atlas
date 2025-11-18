@@ -1,0 +1,75 @@
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+
+% Colors - Matrix green palette
+\definecolor{matrix-green}{RGB}{0,255,65}
+\definecolor{matrix-bright}{RGB}{57,255,20}
+\definecolor{matrix-dim}{RGB}{0,204,51}
+\definecolor{matrix-bg}{RGB}{13,2,8}
+\definecolor{matrix-code-bg}{RGB}{0,26,13}
+
+% Page
+\pagecolor{matrix-bg}
+\color{matrix-green}
+
+% Header / Footer - matrix style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textcolor{matrix-green}{\texttt{[MATRIX PROTOCOL]}}}
+\rhead{\textcolor{matrix-green}{\texttt{<\thepage>}}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{matrix-green}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section headers with glowing effect
+\titleformat{\section}
+  {\large\bfseries\color{matrix-green}\ttfamily}
+  {}
+  {0pt}
+  {\MakeUppercase}
+  [\color{matrix-green}\titlerule]
+
+\titleformat{\subsection}
+  {\bfseries\color{matrix-green}\ttfamily}
+  {}
+  {0pt}
+  {}
+  [\color{matrix-bright}\titlerule]
+
+\titleformat{\subsubsection}
+  {\bfseries\color{matrix-bright}\ttfamily}
+  {}
+  {0pt}
+  {}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=matrix-bright,
+  urlcolor=matrix-bright,
+  citecolor=matrix-green
+}
+
+% Code blocks
+\tcbuselibrary{listings}
+\newtcolorbox{codeblock}{
+  colback=matrix-code-bg,
+  colframe=matrix-green,
+  arc=2pt,
+  boxrule=1pt,
+  left=5pt,
+  right=5pt,
+  top=5pt,
+  bottom=5pt
+}
+
+% Monospace font for entire document
+\setmainfont{Courier New}[
+  Color=matrix-green,
+  LetterSpace=2.0
+]
